@@ -34,7 +34,7 @@ dependencies {
     implementation("io.jsonwebtoken:jjwt-jackson:0.12.5")
     implementation("io.jsonwebtoken:jjwt-api:0.12.6")
     implementation("me.paulschwarz:spring-dotenv:4.0.0")
-    implementation("com.stripe:stripe-java:27.1.0")
+    implementation("com.stripe:stripe-java:29.1.0")
     testImplementation("org.springframework.security:spring-security-test")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
