@@ -10,6 +10,7 @@ public class SwaggerSecurityRules implements SecurityRules {
     public void configure(AuthorizeHttpRequestsConfigurer<HttpSecurity>.AuthorizationManagerRequestMatcherRegistry registry) {
         registry.requestMatchers("/swagger-ui/**").permitAll()
                 .requestMatchers("/swagger-ui.html/**").permitAll()
-                .requestMatchers("/v3/api-docs/**").permitAll();
+                .requestMatchers("/v3/api-docs/**").permitAll()
+                .requestMatchers("/actuator/health/**").permitAll();
     }
 }
