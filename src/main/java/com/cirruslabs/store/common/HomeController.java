@@ -1,4 +1,4 @@
-package com.cirruslabs.store.controllers;
+package com.cirruslabs.store.common;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

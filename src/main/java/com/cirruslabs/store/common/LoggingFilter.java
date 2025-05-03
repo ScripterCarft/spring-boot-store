@@ -1,4 +1,4 @@
-package com.cirruslabs.store.filters;
+package com.cirruslabs.store.common;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

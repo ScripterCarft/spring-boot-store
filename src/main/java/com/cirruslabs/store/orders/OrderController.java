@@ -1,6 +1,6 @@
 package com.cirruslabs.store.orders;
 
-import com.cirruslabs.store.dtos.ErrorDto;
+import com.cirruslabs.store.common.ErrorDto;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

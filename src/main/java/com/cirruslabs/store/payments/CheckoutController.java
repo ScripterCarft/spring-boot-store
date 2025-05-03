@@ -2,8 +2,7 @@ package com.cirruslabs.store.payments;
 
 import com.cirruslabs.store.carts.CartEmptyException;
 import com.cirruslabs.store.carts.CartNotFoundException;
-import com.cirruslabs.store.dtos.ErrorDto;
-import com.cirruslabs.store.orders.OrderRepository;
+import com.cirruslabs.store.common.ErrorDto;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -17,7 +16,6 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class CheckoutController {
     private final CheckoutService checkoutService;
-    private final OrderRepository orderRepository;
 
     @PostMapping
     public CheckoutResponse checkout(@Valid @RequestBody CheckoutRequest checkoutRequest) {

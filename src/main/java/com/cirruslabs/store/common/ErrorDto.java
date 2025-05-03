@@ -1,4 +1,4 @@
-package com.cirruslabs.store.dtos;
+package com.cirruslabs.store.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

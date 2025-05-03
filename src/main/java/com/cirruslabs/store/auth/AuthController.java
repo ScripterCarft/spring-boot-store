@@ -2,14 +2,12 @@ package com.cirruslabs.store.auth;
 
 import com.cirruslabs.store.users.UserDto;
 import com.cirruslabs.store.users.UserMapper;
-import com.cirruslabs.store.users.UserRepository;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,9 +15,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/auth")
 @AllArgsConstructor
 public class AuthController {
-    private final AuthenticationManager authenticationManager;
-    private final JwtService jwtService;
-    private final UserRepository userRepository;
     private final UserMapper userMapper;
     private final JwtConfig jwtConfig;
     private final AuthService authService;
