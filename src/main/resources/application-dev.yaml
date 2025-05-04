@@ -5,4 +5,4 @@ spring:
     password: R10+?loO2!+23low9!
   jpa:
     show-sql: true
-websiteUrl: https://localhost:4200
+websiteUrl: ${FRONTEND_URL}
