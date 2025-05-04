@@ -11,3 +11,5 @@ spring:
 stripe:
   secretKey: ${STRIPE_SECRET}
   webhookSecretKey: ${STRIPE_WEBHOOK_SECRET}
+
+websiteUrl: ${FRONTEND_URL}
