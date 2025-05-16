@@ -18,7 +18,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(@NonNull CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins(websiteUrl)
+                        .allowedOrigins(websiteUrl, "http://localhost:5173")
                         .allowedMethods("*")
                         .allowedHeaders("*");
             }
